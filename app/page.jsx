@@ -7,7 +7,7 @@ export default function HomePage() {
       <Header />
       <main className="p-6">
         <h1 className="text-2xl font-bold mb-4">Welcome, BSWB</h1>
-        <p>Hello there, want to help build this out, let's chat.</p>
+        <p>Hello there, want to help build this out, let&apos;s chat.</p>
       </main>
       <Footer />
     </>
