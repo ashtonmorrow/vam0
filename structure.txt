@@ -1,0 +1,66 @@
+.
+├── app
+│   ├── blobs
+│   │   ├── actions.js
+│   │   ├── editor.jsx
+│   │   ├── generator.js
+│   │   ├── list.jsx
+│   │   ├── new-shape.jsx
+│   │   ├── page.jsx
+│   │   └── renderer.jsx
+│   ├── classics
+│   │   └── page.jsx
+│   ├── edge
+│   │   ├── australia
+│   │   ├── explainer.jsx
+│   │   ├── not-australia
+│   │   └── page.jsx
+│   ├── image-cdn
+│   │   ├── image-with-size-overlay.jsx
+│   │   └── page.jsx
+│   ├── layout.jsx
+│   ├── page.jsx
+│   ├── quotes
+│   │   └── random
+│   └── revalidation
+│       └── page.jsx
+├── components
+│   ├── alert.jsx
+│   ├── card.jsx
+│   ├── code-block.jsx
+│   ├── context-alert.jsx
+│   ├── feedback-form.jsx
+│   ├── footer.jsx
+│   ├── header.jsx
+│   ├── markdown.jsx
+│   ├── random-quote.jsx
+│   └── submit-button.jsx
+├── data
+│   └── quotes.json
+├── jsconfig.json
+├── netlify
+│   └── edge-functions
+│       └── rewrite.js
+├── netlify.toml
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── __forms.html
+│   ├── favicon.svg
+│   ├── images
+│   │   ├── corgi.jpg
+│   │   ├── github-mark-white.svg
+│   │   ├── grid-bg.svg
+│   │   ├── noise.png
+│   │   └── noise.svg
+│   └── netlify-logo.svg
+├── README.md
+├── renovate.json
+├── structure.txt
+├── styles
+│   └── globals.css
+└── utils.js
+
+18 directories, 46 files
