@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
 @import 'tailwindcss';
 
-@theme {
-  --color-primary: #5E8BFF;
-  --color-primary-content: #FFFFFF;
-  --color-secondary: #ECEAE6;
-  --color-neutral: #FAF9F7;
-  --color-dark: #2C2C2C;
-  --color-error: #D64545;
-
-  --font-sans: 'Roboto', system-ui, sans-serif;
-  --font-mono: 'Roboto Mono', ui-monospace, monospace;
-
-  --background-image-noise: none;
-}
-
 @layer base {
+  :root {
+    --color-primary: #5E8BFF;
+    --color-primary-content: #FFFFFF;
+    --color-secondary: #ECEAE6;
+    --color-neutral: #FAF9F7;
+    --color-dark: #000000; /* switched to black */
+    --color-error: #D64545;
+
+    --font-sans: 'Roboto', system-ui, sans-serif;
+    --font-mono: 'Roboto Mono', ui-monospace, monospace;
+  }
+
   html,
   body {
     background-color: #FFFFFF;
@@ -43,8 +41,8 @@
   }
 
   a:not(.btn) {
-    color: var(--color-primary);
     @apply underline transition hover:opacity-80;
+    color: var(--color-primary);
   }
 
   :not(pre) > code {
@@ -75,9 +73,8 @@
 
   .btn {
     @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-colors cursor-pointer;
-    padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
-    font-size: var(--btn-font-size, 0.875rem);
-    border-radius: var(--btn-border-radius, 0.25rem);
+    @apply px-5 py-3 text-sm rounded;
+
     background: var(--color-primary);
     color: var(--color-primary-content);
 
@@ -91,9 +88,7 @@
   }
 
   .btn-lg {
-    --btn-font-size: 1.125rem;
-    --btn-px: 1.5rem;
-    --btn-py: 1.125rem;
+    @apply text-lg px-6 py-4;
   }
 
   .input {
