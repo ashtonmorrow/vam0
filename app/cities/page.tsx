@@ -1,14 +1,13 @@
 // app/cities/page.tsx
-'use client'; // optional if you're not using any server components
 
-import { createClient } from '@/utils/supabase'; // Adjust if your Supabase client is elsewhere
+import { createClient } from '@/utils/supabase';
 
 export default async function CitiesPage() {
   const supabase = createClient();
 
   const { data: cities, error } = await supabase
     .from('cities')
-    .select('id,name,country');
+    .select('id, name, country');
 
   if (error) {
     return <p className="text-red-500 p-6">Error loading cities: {error.message}</p>;
