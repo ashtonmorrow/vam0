@@ -1,5 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
-@import 'tailwindcss';
 
 @layer base {
   :root {
@@ -7,7 +10,7 @@
     --color-primary-content: #FFFFFF;
     --color-secondary: #ECEAE6;
     --color-neutral: #FAF9F7;
-    --color-dark: #000000; /* switched to black */
+    --color-dark: #000000; /* pure black */
     --color-error: #D64545;
 
     --font-sans: 'Roboto', system-ui, sans-serif;
